@@ -1,0 +1,22 @@
+package components
+
+templ Page(title string) {
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>{title}</title>
+      <script src="/dist/index.js"></script>
+      <link rel="stylesheet" href="/dist/styles.css" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png" />
+      <link rel="manifest" href="/public/site.webmanifest" />
+    </head>
+    <body>
+      @Body() {
+        @Header()
+        {children...}
+        @Footer()
+      }
+    </body>
+  </html>
+}

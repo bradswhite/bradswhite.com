@@ -1,0 +1,24 @@
+package components
+
+templ Header() {
+  <header class="w-full flex justify-center">
+    <nav class="opacity-50 bg-gray-300 dark:bg-gray-800 flex flex-wrap items-center justify-between w-2/3 p-2 m-2 rounded-full">
+      <a href="/">
+        <img src="public/bw-logo.png" alt="BSW" class="w-[100px] h-[100px] rounded-full" />
+      </a>
+
+      <!-- Menu -->
+      <ul class="float-right items-center justify-between w-auto flex">
+        <li class="cursor-pointer rounded-full p-2 m-4 bg-blue-300"><!--icon?--><a href="/about">About</a></li>
+        <li class="cursor-pointer rounded-full p-2 m-4 bg-blue-300"><!--icon?--><a href="/work">Work</a></li>
+        
+        <!-- Mode Switcher -->
+        <li id="modeSwitcher" class="cursor-pointer rounded-full p-2 m-4 bg-blue-300">
+          <!-- Default to light mode: -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a6 6 0 0 0 9 9a9 9 0 1 1-9-9"/></svg>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+}
