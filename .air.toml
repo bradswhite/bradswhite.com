@@ -5,7 +5,7 @@ tmp_dir = "tmp"
 [build]
   args_bin = []
   bin = "./tmp/main"
-  pre_cmd = ["templ generate", "tsc ts/index.ts -outfile dist/index.js", "tailwindcss -i ./styles.css -o ./dist/styles.css"]
+  pre_cmd = ["templ generate", "tsc ts/index.ts -outfile dist/index.js", "tailwindcss -i ./styles.css -o ./dist/styles.css -m"]
   cmd = "go build -o ./tmp/main ."
   post_cmd = []
   delay = 5000

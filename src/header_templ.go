@@ -23,7 +23,7 @@ func Header() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<header class=\"w-full flex justify-center\"><nav class=\"opacity-50 bg-gray-300 dark:bg-gray-800 flex flex-wrap items-center justify-between w-2/3 p-2 m-2 rounded-full\"><a href=\"/\"><img src=\"public/bw-logo.png\" alt=\"BSW\" class=\"w-[100px] h-[100px] rounded-full\"></a><!--")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<header class=\"w-full flex justify-center font-triakis\"><nav class=\"opacity-50 bg-gray-300 bg-red-5 flex flex-wrap items-center justify-between w-2/3 p-2 m-2 rounded-full\"><a href=\"/\"><img src=\"public/bw-logo.png\" alt=\"BSW\" class=\"w-[100px] h-[100px] rounded-full\"></a><!--")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -32,7 +32,7 @@ func Header() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("--><ul class=\"float-right items-center justify-between w-auto flex\"><li class=\"cursor-pointer rounded-full p-2 m-4 bg-blue-300\"><!--")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("--><ul class=\"float-right items-center justify-between w-auto flex\"><li class=\"cursor-pointer rounded-full p-2 m-4 bg-red-8\"><!--")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -50,7 +50,7 @@ func Header() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</a></li><li class=\"cursor-pointer rounded-full p-2 m-4 bg-blue-300\"><!--")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</a></li><li class=\"cursor-pointer rounded-full p-2 m-4 bg-red-8\"><!--")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -77,7 +77,7 @@ func Header() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("--><li id=\"modeSwitcher\" class=\"cursor-pointer rounded-full p-2 m-4 bg-blue-300\"><!--")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("--><li id=\"modeSwitcher\" class=\"cursor-pointer rounded-full p-2 m-4 bg-red-5\"><!--")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

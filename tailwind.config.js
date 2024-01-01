@@ -7,9 +7,9 @@ module.exports = {
       crenzo: 'Crenzo',
       baunk: 'Baunk',
       triakis: 'Triakis'
-    },
-    extend: {},
+    }
   },
-  plugins: [],
+  plugins: [
+    require('./rx-colors')
+  ],
 }
-
