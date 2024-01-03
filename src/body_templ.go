@@ -10,6 +10,15 @@ import "context"
 import "io"
 import "bytes"
 
+import (
+	"math/rand"
+	"strconv"
+)
+
+func genId() string {
+	return strconv.Itoa(rand.Int())
+}
+
 func Body() templ.Component {
 	return templ.ComponentFunc(func(ctx context.Context, templ_7745c5c3_W io.Writer) (templ_7745c5c3_Err error) {
 		templ_7745c5c3_Buffer, templ_7745c5c3_IsBuffer := templ_7745c5c3_W.(*bytes.Buffer)
@@ -23,7 +32,15 @@ func Body() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"bg-gray-1 h-screen\">")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"bg-sage-1 h-screen absolute inset-x-0 -z-10 overflow-hidden\">")
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = BgBlob("top-[-10rem]", "sm:top-[-20rem]", "left-[calc(50%-11rem)]", "sm:left-[calc(50%-30rem)]", "rotate-[30deg]", genId()).Render(ctx, templ_7745c5c3_Buffer)
+		if templ_7745c5c3_Err != nil {
+			return templ_7745c5c3_Err
+		}
+		templ_7745c5c3_Err = BgBlob("top-[calc(100%-13rem)]", "sm:top-[calc(100%-30rem)]", "left-[calc(50%+3rem)]", "sm:left-[calc(50%+36rem)]", "", genId()).Render(ctx, templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

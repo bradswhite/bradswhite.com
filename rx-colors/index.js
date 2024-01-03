@@ -10,7 +10,7 @@ module.exports = require('tailwindcss/plugin')(({ addUtilities }) => {
     ...acc,
     ...Object.keys(lightColors[key]).reduce((a, shade) => ({
       ...a,
-      ...['bg', 'shadow', 'ring', 'border', 'text'].reduce((b, prop) => ({
+      ...['bg', 'shadow', 'ring', 'border', 'text', 'to', 'via', 'from'].reduce((b, prop) => ({
         ...b,
         [`.${prop}-${(key)}-${shade}`]: {
           [`@apply ${prop}-[${lightColors[key][shade]}] dark:${prop}-[${darkColors[key][shade]}]`]: true

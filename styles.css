@@ -22,3 +22,17 @@
   font-weight: bold;
   font-style: normal;
 }
+
+.stop-1 {
+  stop-color: #F8BFC8;
+}
+.stop-2 {
+  stop-color: #B8BAF8;
+}
+
+.dark .stop-1 {
+  stop-color: #3A141E;
+}
+.dark .stop-2 {
+  stop-color: #262A65;
+}

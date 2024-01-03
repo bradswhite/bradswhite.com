@@ -24,5 +24,11 @@ func main() {
 	component = components.WorkPage()
 	app.Get("/work", adaptor.HTTPHandler(templ.Handler(component)))
 
+	component = components.BlogPage()
+	app.Get("/blog", adaptor.HTTPHandler(templ.Handler(component)))
+
+	component = components.ContactPage()
+	app.Get("/contact", adaptor.HTTPHandler(templ.Handler(component)))
+
 	log.Fatal(app.Listen(":3000"))
 }
