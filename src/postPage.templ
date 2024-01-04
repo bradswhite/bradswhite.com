@@ -1,0 +1,12 @@
+package components
+
+import fns "bradswhite.com/fns"
+
+templ PostPage(front *fns.Matter, body templ.Component) {
+  @Page("Brad White // " + front.Title) {
+    <div class="bg-sage-3">
+      @PostHeader(front)
+      @PostBody(body)
+    </div>
+  }
+}
