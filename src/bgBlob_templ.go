@@ -25,7 +25,7 @@ func BgBlob(top, smTop, left, smLeft, rotate, id string) templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		var templ_7745c5c3_Var2 = []any{fmt.Sprintf("absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl %s %s", top, smTop)}
+		var templ_7745c5c3_Var2 = []any{fmt.Sprintf("absolute bg-fixed inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl %s %s", top, smTop)}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var2...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
@@ -42,7 +42,7 @@ func BgBlob(top, smTop, left, smLeft, rotate, id string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		var templ_7745c5c3_Var3 = []any{fmt.Sprintf("relative -z-10 max-w-none -translate-x-1/2 h-[20rem] sm:h-[40rem] %s %s %s", left, smLeft, rotate)}
+		var templ_7745c5c3_Var3 = []any{fmt.Sprintf("relative max-w-none -translate-x-1/2 h-[20rem] sm:h-[40rem] %s %s %s", left, smLeft, rotate)}
 		templ_7745c5c3_Err = templ.RenderCSSItems(ctx, templ_7745c5c3_Buffer, templ_7745c5c3_Var3...)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err

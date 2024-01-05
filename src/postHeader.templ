@@ -6,7 +6,7 @@ templ PostHeader(front *fns.Matter) {
   <div>
     <h1>{front.Title}</h1>
     <h2>{front.Subtitle}</h2>
-    <img src={front.Thumbnail} alt={front.Title} />
+    <img class="w-[600px] h-[400px]" src={"/public/" + front.Thumbnail} alt={front.Title} />
     <h3>{front.Date}</h3>
   </div>
 }

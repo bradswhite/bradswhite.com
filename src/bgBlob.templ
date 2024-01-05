@@ -3,9 +3,9 @@ package components
 import "fmt"
 
 templ BgBlob(top, smTop, left, smLeft, rotate, id string) {
-  <div class={fmt.Sprintf("absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl %s %s", top, smTop)}>
+  <div class={fmt.Sprintf("absolute bg-fixed inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl %s %s", top, smTop)}>
     <svg
-      class={fmt.Sprintf("relative -z-10 max-w-none -translate-x-1/2 h-[20rem] sm:h-[40rem] %s %s %s", left, smLeft, rotate)}
+      class={fmt.Sprintf("relative max-w-none -translate-x-1/2 h-[20rem] sm:h-[40rem] %s %s %s", left, smLeft, rotate)}
       viewBox="0 0 1155 678"
     >
       <path
