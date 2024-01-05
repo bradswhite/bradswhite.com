@@ -1,0 +1,13 @@
+package post
+
+import (
+  fns "bradswhite.com/fns"
+  page "bradswhite.com/src/page"
+)
+
+templ PostPage(front *fns.Matter, body templ.Component) {
+  @page.Page("Brad White // " + front.Title) {
+    @PostHeader(front)
+    @PostBody(body)
+  }
+}

@@ -52,8 +52,8 @@ func main() {
 	component = components.ContactPage()
 	app.Get("/contact", adaptor.HTTPHandler(templ.Handler(component)))
 
-	component = components.ErrorPage()
-	app.Get("/error", adaptor.HTTPHandler(templ.Handler(component)))
+	//component = components.ErrorPage()
+	//app.Get("/error", adaptor.HTTPHandler(templ.Handler(component)))
 
 	log.Fatal(app.Listen(":3000"))
 }

@@ -1,0 +1,22 @@
+package page
+
+import (
+  "math/rand"
+  "strconv"
+)
+
+func genId() string {
+  return strconv.Itoa(rand.Int())
+}
+
+templ Body() {
+  <div class="bg-sage-1 h-screen absolute inset-x-0 -z-10 overflow-hidden bg-fixed">
+    @BgBlob("top-[-10rem]", "sm:top-[-20rem]", "left-[calc(50%-11rem)]", "sm:left-[calc(50%-30rem)]", "rotate-[30deg]", genId())
+    @BgBlob("top-[calc(100%-13rem)]", "sm:top-[calc(100%-30rem)]", "left-[calc(50%+3rem)]", "sm:left-[calc(50%+36rem)]", "", genId())
+  </div>
+  <div class="absolute inset-x-0 z-0 overflow-y-auto h-screen">
+    <div class="relative overflow-y-auto text-gray-12">
+      {children...}
+    </div>
+  </div>
+}
