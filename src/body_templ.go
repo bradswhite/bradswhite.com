@@ -44,7 +44,7 @@ func Body() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</div><div class=\"absolute inset-x-0 -z-1 overflow-y-auto h-screen\"><div class=\"relative overflow-y-auto\">")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</div><div class=\"absolute inset-x-0 z-0 overflow-y-auto h-screen\"><div class=\"relative overflow-y-auto text-gray-12\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

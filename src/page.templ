@@ -14,9 +14,7 @@ templ Page(title string) {
     <body class="dark">
       @Body() {
         @Header()
-        <div class="text-gray-12">
-          {children...}
-        </div>
+        {children...}
         @Footer()
       }
     </body>

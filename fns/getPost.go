@@ -6,10 +6,10 @@ import (
   "github.com/adrg/frontmatter"
 )
 
-func GetPost(title string) (*Matter, []byte, error) {
+func GetPost(name string) (*Matter, []byte, error) {
   front := &Matter{}
   
-  file, err := os.Open("./posts/" + title + ".md")
+  file, err := os.Open("./posts/" + name)
   if err != nil {
     return nil, nil, err
   }

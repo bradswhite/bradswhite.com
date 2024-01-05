@@ -35,11 +35,11 @@ func main() {
 	component = components.WorkPage()
 	app.Get("/work", adaptor.HTTPHandler(templ.Handler(component)))
 
-	component = components.BlogPage()
-	app.Get("/blog", adaptor.HTTPHandler(templ.Handler(component)))
+  posts, _ := fns.GetPosts()
+  app.Get("/blog", adaptor.HTTPHandler(templ.Handler(components.BlogPage(posts))))
 	
   app.Get("/post/:title", func (c *fiber.Ctx) error {
-    front, body, err := fns.GetPost(c.Params("title"))
+    front, body, err := fns.GetPost(c.Params("title") + ".md")
     if err != nil {
       return adaptor.HTTPHandler(templ.Handler(components.ErrorPage()))(c)
     }
